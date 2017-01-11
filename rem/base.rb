@@ -2,8 +2,8 @@
 #
 require 'unidecoder'
 
-module Brcobranca
-  module Remessa
+module Boleto
+  module Rem
     class Base
       # pagamentos da remessa (cada pagamento representa um registro detalhe no arquivo)
       attr_accessor :pagamentos
@@ -31,7 +31,7 @@ module Brcobranca
         if value.is_a? Array
           record.errors.add(attr, 'não pode estar vazio.') if value.empty?
           value.each do |pagamento|
-            if pagamento.is_a? Brcobranca::Remessa::Pagamento
+            if pagamento.is_a? Boleto::Rem::Pagamento
               if pagamento.invalid?
                 pagamento.errors.full_messages.each { |msg| record.errors.add(attr, msg) }
               end

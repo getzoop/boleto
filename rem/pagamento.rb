@@ -1,7 +1,7 @@
 # -*- encoding: utf-8 -*-
 #
-module Brcobranca
-  module Remessa
+module Boleto
+  module Rem
     class Pagamento
       # Validações do Rails 3
       include ActiveModel::Validations

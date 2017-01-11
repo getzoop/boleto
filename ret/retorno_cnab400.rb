@@ -7,8 +7,8 @@
 # Movido para: cnab400/itau.rb
 #
 require 'parseline'
-module Brcobranca
-  module Retorno
+module Boleto
+  module Ret
     # Formato de Retorno CNAB 400
 
     # Baseado em: http://download.itau.com.br/bankline/layout_cobranca_400bytes_cnab_itau_mensagem.pdf
