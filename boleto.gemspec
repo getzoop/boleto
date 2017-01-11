@@ -1,4 +1,4 @@
 # -*- encoding: utf-8 -*-
 #
-require 'version'
+VERSION = '1.0.0'
 
